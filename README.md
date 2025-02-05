@@ -13,7 +13,7 @@
 ## Prérequis
 
 - PHP >= 7.3
-- Laravel 8.x, 9.x ou 10.x
+- Laravel 11.x ou 12.x
 - Un compte Twilio avec les informations suivantes :  
   - **Account SID**
   - **Auth Token**
@@ -26,6 +26,7 @@ Installez le package via Composer :
 
 ```bash
 composer require sabow/twilio-laravel
+```
 
 Laravel détecte automatiquement le Service Provider et la façade grâce à l'auto-discovery. Si vous utilisez une version de Laravel qui ne supporte pas cette fonctionnalité, ajoutez manuellement le Service Provider et l'alias dans le fichier config/app.php :
 
@@ -229,4 +230,3 @@ Pour toute question, suggestion ou rapport de bug, merci d'ouvrir une issue sur 
 
 Merci d'utiliser Sabow TwilioLaravel pour intégrer Twilio dans vos projets Laravel !
 N'hésitez pas à contribuer pour améliorer ce package et à partager vos retours.
-

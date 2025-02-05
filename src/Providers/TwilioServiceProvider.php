@@ -24,11 +24,13 @@ class TwilioServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // Fusionner la configuration par défaut avec celle de l'application
         $this->mergeConfigFrom(
-            __DIR__ . '/../../config/twilio.php',
+            dirname(__DIR__) . '/config/twilio.php',
             'twilio'
         );
+
+
+
 
         // Enregistrer un binding pour TwilioClient
         $this->app->bind('TwilioClient', function () {
@@ -72,7 +74,8 @@ class TwilioServiceProvider extends ServiceProvider
     protected function publishConfig()
     {
         $this->publishes([
-            __DIR__ . '/../../config/twilio.php' => config_path('twilio.php'),
+            dirname(__DIR__) . '/config/twilio.php'
+            => config_path('twilio.php'),
         ], 'config');
     }
 }

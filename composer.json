@@ -1,0 +1,35 @@
+{
+    "name": "sabow/twilio-laravel",
+    "description": "Package Laravel pour intégrer l'API Twilio et la vérification de numéro",
+    "require": {
+        "php": "*",
+        "twilio/sdk": "^8.3",
+        "illuminate/support": "^10.48"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sabow\\TwilioLaravel\\": "src/"
+        }
+    },
+    
+    "extra": {
+    "laravel": {
+      "providers": [
+        "Sabow\\TwilioLaravel\\Providers\\TwilioServiceProvider"
+      ],
+      "aliases": {
+        "Twilio": "Sabow\\TwilioLaravel\\Facades\\Twilio"
+      }
+    }
+  },
+    "authors": [
+        {
+            "name": "SABOWA Ryan",
+            "email": "screentapinc@gmail.com"
+        }
+    ],
+    "type": "library",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

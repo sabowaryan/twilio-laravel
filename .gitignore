@@ -1,0 +1,30 @@
+# Ignorer le dossier vendor (les dépendances installées par Composer)
+vendor/
+
+# Ignorer les fichiers de configuration locaux
+.env
+.env.*
+
+# Ignorer les caches de Composer
+composer.lock
+
+# Ignorer les fichiers de log
+*.log
+
+# Ignorer les dossiers de cache et temporaires
+storage/
+bootstrap/cache/
+
+# Ignorer les fichiers/dossiers générés par votre IDE ou éditeur
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignorer les fichiers de build
+node_modules/
+public/build/
+
+# Ignorer les fichiers système
+.DS_Store
+Thumbs.db
